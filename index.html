@@ -1,0 +1,26 @@
+ <!doctype html>
+<html>
+<head>
+	<title>글자수 세기</title>
+	<script src="./jquery.js"></script>
+	<style>
+		.user_text {
+			width:60%;
+			height:400px;
+			font-size:19px;
+		}
+		p {
+			font-size:17px;
+		}
+	</style>
+</head>
+<body>
+	<textarea class="user_text"></textarea></div>
+	<p class="result">0글자</p>
+	<script>
+		playAlert = setInterval(function(){
+			$('.result').text($('.user_text').val().length + '글자');
+		},100);
+	</script>
+</body>
+</html>
